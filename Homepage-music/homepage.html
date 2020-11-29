@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    
+
+    <div class="content-wrapper">
+
+        <header>
+
+            <img src="logo.png">
+
+            <div class="menu">
+
+                <i class="fas fa-times cross"></i>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book Show</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+
+            </div>
+
+
+            <i class="fas fa-bars bar"></i>
+
+        </header>
+
+
+        <div class="content">
+
+            <div class="content-text">
+
+                <p>Nobody cares if you can't dance well . Just get up and dance . Great dancers are great because of their passion</p>
+                <label>We Create <span class="typing"></span></label>
+
+            </div>
+
+        </div>
+
+        <div class="social-media">
+
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var typed = new Typed(".typing",{
+
+         strings : ["BEST DANCERS" , "BEST SINGERS"],
+         typeSpeed : 100,
+         backSpeed : 60,
+         loop :true
+
+        });
+
+
+        $(document).ready(function(){
+
+
+          $(".bar").click(function(){
+
+              $(".menu").addClass("slideIn");
+              $(".social-media").addClass("moveSocialIcons");
+
+
+          });
+          
+          $(".cross").click(function(){
+
+            $(".menu").removeClass("slideIn");
+            $(".social-media").removeClass("moveSocialIcons");
+
+          });
+
+
+        });
+
+    </script>
+
+</body>
+</html>

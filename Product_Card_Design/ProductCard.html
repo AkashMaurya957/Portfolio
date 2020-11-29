@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Design || Coding Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="card-design">
+
+        <span class="image-background"></span>
+
+        <div class="image">
+ 
+            <img src="white.png" id="product-image">
+
+        </div>
+
+        <div class="details">
+
+             <div class="icon">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+             </div>
+       
+             <h2>Men's Shoes</h2>
+            <p>The comfortable sneaker soft sole is made from durable and MD outsole , which provides the user with the enough buffer between feet and ground .</p>
+            <h3 class="price">$ 150</h3>
+
+            <div class="color">
+
+                <label>
+                    <input type="radio" name="color" id="white" checked>
+                    <span></span>
+                </label>
+
+                <label>
+                    <input type="radio" name="color" id="black">
+                    <span></span>
+                </label>
+
+                <label>
+                    <input type="radio" name="color" id="grey">
+                    <span></span>
+                </label>
+
+            </div>
+
+            <button>Add To Cart</button>
+
+
+        </div>
+
+    </div>
+    
+
+    <script>
+
+        let black ="black.png";
+
+        let white = "white.png";
+
+        let grey = "grey.png";
+ 
+         $('#black').click(()=>{
+
+          document.getElementById('product-image').src = black;
+
+         });
+
+         $('#white').click(()=>{
+
+          document.getElementById('product-image').src = white;
+
+         });
+
+         $('#grey').click(()=>{
+
+           document.getElementById('product-image').src = grey;
+
+        });
+
+
+    </script>
+
+</body>
+</html>

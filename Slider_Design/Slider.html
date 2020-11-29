@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Slider | Coding Zone </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+    <div class="slide-container">
+          
+        <div class="slide slow">               
+            <img src="slide1.jpg">               
+        </div>
+
+        <div class="slide slow">               
+            <img src="slide2.jpg">               
+        </div>
+
+        <div class="slide slow">               
+            <img src="slide3.jpg">               
+        </div>
+
+        <div class="slide slow">               
+            <img src="slide4.jpg">               
+        </div>
+
+        <div class="slide slow">               
+            <img src="slide5.jpg">               
+        </div>
+        
+        <a class="previous" onclick="plusSlide(-1)" ><span class="arrow">&#10094</span></a>
+        <a class="next" onclick="plusSlide(1)"><span class="arrow">&#10095</span></a>
+
+
+         <div class="dots">
+
+             <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+             <span class="dot" onclick="currentSlide(3)"></span>
+             <span class="dot" onclick="currentSlide(4)"></span>
+             <span class="dot" onclick="currentSlide(5)"></span>
+
+         </div>
+
+    </div>
+
+<script src="slider.js"></script>
+
+</body>
+</html>

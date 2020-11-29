@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Homepage || Coding Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+   <header>
+
+          <div class="logo">
+        
+             <img src="logo.jpg">
+              
+          </div>
+
+          <div class="menu-wrapper">
+
+                <div class="menu">
+                    
+                     <ul>
+                      
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#About">About Us</a></li>
+                        <li><a href="#Contact">Contact Us</a></li>
+
+                     </ul>
+                      
+                </div>
+              
+          </div>
+
+          <div id="bar-animation">
+                    
+            <span></span>
+
+          </div>
+
+   </header>
+
+
+
+   <div class="home" id="Home">
+  
+     <div class="details">
+        <h2>I'm <font color="red">Akash</font> Maurya</h2>
+        <p>Love to make clean and simple Design.</p>  
+        <p>Also love to solve different different problems.</p> 
+        <button>Know More About ME</button>
+     </div> 
+
+     <img src="profile png.png">
+
+     <div class="Social-media">
+
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+
+
+     </div>
+
+   </div>
+
+
+
+
+   <div class="services" id="Services">
+
+       <h1><font color="#E6E7E8">Our Services</font></h1>  
+  
+       <div class="card">
+ 
+         <div class="box-1">
+
+            <p class="title"> Backend</p>
+            <div class="image">
+                <img src="Card1.jpg">
+            </div>
+            <p class="info"> We work continuously to improve out services and help others with our knowledge</p>
+
+         </div>
+
+         <div class="box-1">
+
+            <p class="title">Frontend</p>
+            <div class="image">
+                <img src="Card2.jpg">
+            </div>
+            <p class="info"> We work continuously to improve out services and help others with our knowledge</p>
+
+         </div>
+
+         <div class="box-1 box-algo">
+
+            <p class="title">Algorithems</p>
+            <div class="image">
+                <img src="Card3.jpg">
+            </div>
+            <p class="info"> We work continuously to improve out services and help others with our knowledge</p>
+
+         </div>
+
+
+       </div>
+
+
+   </div>
+
+
+
+
+
+   <div class="about" id="About">
+
+
+    <div class="about-us">
+
+         <h1>About Us</h1>          
+         <h2>Front End Developer</h2>
+         <p>
+             Love to make clean and simple Design.
+            I am trying to create awesome design using my existing knowledge.
+            I continuously try to improve my knowledge to create eye catching design.
+            Photshop for the web brings an advanced design interface.
+         </p>
+
+         <button>View More Details</button>
+   
+
+    </div>
+
+    <div class="about-image">
+
+            <div class="image-border"></div>
+
+            <img src="profile.jpg">
+    </div>
+
+   </div>
+
+
+
+
+
+   <div class="contact" id="Contact">
+
+       <div class="contact-heading">
+
+           You have any idea or suggestion contact us 
+
+       </div>
+
+
+       <div class="contact-form">
+
+        
+       <div class="input-details">
+
+  
+         <h1>Contact Us</h1>
+
+        <div class="input-container">
+
+          <label>Full Name</label>
+          <input type="text" placeholder="Full Name">
+
+        </div>
+
+        <div class="input-container">
+
+          <label>Email Address</label>
+          <input type="text" placeholder="Email">
+
+        </div>  
+
+     </div>
+
+
+     <div class="input-message"> 
+
+      <textarea placeholder="write message to us ..."></textarea>
+      <button>Send Message</button>
+
+         
+      </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+    <div class="arrow-top">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </div>
+
+   <script>
+      
+      $(document).ready(function(){
+
+         $("#bar-animation").click(function(){
+
+             $(this).toggleClass("active-bar");
+             $(".menu-wrapper").toggleClass("fullMenushow");
+             $(".menu").toggleClass("startComeWithDelay");
+
+         });
+
+         $("li").click(function(){
+
+         
+         $(".menu-wrapper").removeClass("fullMenushow");
+         $(".menu").toggleClass("startComeWithDelay");
+         $("#bar-animation").toggleClass("active-bar");
+
+        });
+
+        $(".arrow-top").on('click',function(){
+
+            $("html,body").animate({scrollTop:0},200);
+        });
+
+
+
+        $(window).scroll(function(){
+
+              if($(document).scrollTop() > 50){
+
+                $("header").addClass("shrinkHeader");
+
+              }
+              else{
+                
+                $("header").removeClass("shrinkHeader");
+
+
+              }
+         
+         
+        });
+
+      });
+
+   </script>
+
+</body>
+</html>

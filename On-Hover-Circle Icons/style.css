@@ -1,0 +1,113 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    
+}
+
+.icons li{
+
+    position: relative;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icons li::before{
+
+    content: ''; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #eff3f7;
+    z-index: -1;
+    border-radius: 10%;
+   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.41);
+
+   transition: all 0.3s;
+}
+
+.icons li a .fa{
+
+    line-height:70px ;
+    font-size: 35px;
+}
+
+.icons li a .fa-instagram{
+
+    color: #fb3958;
+}
+
+.icons li a .fa-github{
+
+    color: #211F1f;
+}
+
+.icons li a .fa-facebook-f{
+
+    color: #3b5998;
+}
+
+.icons li a .fa-twitter{
+
+    color: #00acee;
+}
+
+.icons .instagram:hover::before{
+
+    transform: rotate(360deg);
+    border-radius: 100%;
+    background-color: #fb3958;
+    
+}
+
+.icons .github:hover::before{
+
+    transform: rotate(360deg);
+    border-radius: 100%;
+    background-color: #211F1f;
+    
+}
+
+.icons .facebook:hover::before{
+
+    transform: rotate(360deg);
+    border-radius: 100%;
+    background-color: #3b5998;
+    
+}
+
+.icons .twitter:hover::before{
+
+    transform: rotate(360deg);
+    border-radius: 100%;
+    background-color: #00acee;
+    
+}
+
+
+.icons li:hover a span{
+
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.icons li a span{
+
+    transition: all 0.5s linear;
+
+}
+
+

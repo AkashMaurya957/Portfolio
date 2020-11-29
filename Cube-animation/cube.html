@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Animation || Coding Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="content">
+
+        <div class="btn">
+      
+            <button class="front">Profile Image</button>
+            <button class="right">Details</button>
+            <button class="back">Social Media</button>
+            <button class="left">Bio</button>
+            <button class="top">Introduction</button>
+            <button class="bottom">Thought</button>
+
+        </div>
+
+        <div id="cube-shape">
+
+            <div class="front">
+                <a href="#">
+                    <img src="bride.jpg">
+                </a>
+            </div>
+
+            <div class="right">
+                <a href="#">
+                    <b>Akash Maurya</b>
+                    <b>Age 22</b>
+                </a>
+            </div>
+            
+            <div class="back">
+                
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </a>
+            
+            </div>
+            
+            <div class="left">
+                <a href="#">
+                    
+                    <label>
+                         <i>&ldquo;</i>
+                         Software Developer at Coding Zone.
+                         Love to make clean and simple design.
+                         <i>&rdquo;</i>
+                    </label>
+                </a>
+            
+            </div>
+            
+            <div class="top">
+                
+                <a href="#">
+                    <video src="Intro.mp4" muted autoplay loop></video>
+                </a>
+            </div>
+            
+            <div class="bottom">
+                <a href="#">
+                   <label><i>&ldquo;</i>
+                    Software Developer at Coding Zone.
+                    Love to make clean and simple design.
+                    <i>&rdquo;</i>
+
+                </label> 
+                </a>
+            </div>
+   
+       </div>
+
+
+    </div>
+
+
+
+    <script>
+
+      $(document).ready(function(){
+
+        $('.front').click(function(){
+
+            $('#cube-shape').removeClass().addClass('showProfileImage');
+        });
+
+
+         $('.right').click(function(){
+
+            $('#cube-shape').removeClass().addClass('Details');
+        });
+
+        $('.back').click(function(){
+
+        $('#cube-shape').removeClass().addClass('social');
+      
+        });
+
+
+        $('.left').click(function(){
+
+          $('#cube-shape').removeClass().addClass('bio');
+        });
+
+
+          $('.top').click(function(){
+
+           $('#cube-shape').removeClass().addClass('intro');
+            });
+
+        $('.bottom').click(function(){
+
+         $('#cube-shape').removeClass().addClass('thought');
+
+        });
+   
+
+      });
+
+    </script>
+    
+</body>
+</html>
